@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* a {
+  color: #1bb1dc;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+} */
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+  # Responsive Media Queries
+  --------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+  #intro .intro-info {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 70px;
+    padding: 15px 0;
+  }
+
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    height: auto;
+    padding: 80px 0 60px 0;
+  }
+
+  #intro .container {
+    height: auto !important;
+  }
+
+  #intro .intro-img {
+    width: 80%;
+  }
+
+  #intro .intro-info {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #intro .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .section-header p {
+    width: 100%;
+  }
+}

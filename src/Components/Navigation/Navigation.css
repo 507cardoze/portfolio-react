@@ -1,0 +1,105 @@
+span {
+  color: #1bb1dc;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+span:hover,
+span:active,
+span:focus {
+  color: #0a98c0;
+  outline: none;
+}
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-pages {
+  height: 70px;
+  padding: 15px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: none;
+}
+
+#header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  transition: all 800ms ease;
+}
+
+#header .logo h1 span,
+#header .logo h1 span:hover {
+  color: #413e66;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: -2px 0;
+  max-height: 50px;
+}
+
+.main-pages {
+  margin-top: 60px;
+}
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav span {
+  display: block;
+  position: relative;
+  color: #413e66;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav span:hover,
+.main-nav .active > span,
+.main-nav li:hover > span {
+  color: #1bb1dc;
+  border-bottom: 2px solid #1bb1dc;
+}

@@ -15,7 +15,7 @@ const Navigation = ({ gotoAction }) => {
       <div className="container">
         <div className="logo float-left" onClick={() => gotoAction("Home")}>
           <span>
-            <img src={data.header.logo} alt="" class="img-fluid" />
+            <img src={data.header.logo} alt="" className="img-fluid" />
           </span>
           {sectionName !== "Inicio" && (
             <h1 className="text-light">

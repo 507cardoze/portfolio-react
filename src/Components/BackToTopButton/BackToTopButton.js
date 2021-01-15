@@ -22,8 +22,8 @@ const BackToTopButton = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div class="back-to-top" onClick={scrollToTopAction}>
-      <i class="fa fa-chevron-up"></i>
+    <div className="back-to-top" onClick={scrollToTopAction}>
+      <i className="fa fa-chevron-up"></i>
     </div>
   );
 };

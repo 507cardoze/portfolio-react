@@ -1,4 +1,4 @@
-import React, { useState, useEffect, forwardRef } from "react";
+import { useState, useEffect, forwardRef } from "react";
 import { InView } from "react-intersection-observer";
 import HeaderList from "./HeaderList/HeaderList";
 import List from "./List/List";

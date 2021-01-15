@@ -1,4 +1,3 @@
-import React from "react";
 import NOIMAGE from "../../../../../img/wireframe.png";
 import { motion } from "framer-motion";
 
@@ -65,7 +64,7 @@ function ListItem({ item, setVideoModal }) {
           className="img-fluid"
           alt=""
         />
-        <div className="portfolio-info">
+        <div className={`portfolio-info`}>
           <h4>
             {item.URL ? (
               <a rel="noopener noreferrer" target="_blank" href={item.URL}>

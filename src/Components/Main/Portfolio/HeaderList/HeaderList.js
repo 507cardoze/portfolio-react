@@ -1,5 +1,3 @@
-import React from "react";
-
 function HeaderList({ data, categoriaSelected, handleOnClickCategory }) {
   return (
     <>
@@ -9,8 +7,9 @@ function HeaderList({ data, categoriaSelected, handleOnClickCategory }) {
       <div className="row">
         <div className="col-lg-12">
           <ul id="portfolio-flters">
-            {data.portfolio.porfolioFilterList.map((value) => (
+            {data.portfolio.porfolioFilterList.map((value, i) => (
               <li
+                key={i}
                 className={categoriaSelected === value ? `filter-active` : ``}
                 onClick={() => handleOnClickCategory(value)}
               >

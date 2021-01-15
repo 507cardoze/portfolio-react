@@ -1,9 +1,7 @@
-import "./Main.css";
 import { forwardRef, useContext } from "react";
 import { NavContext } from "../../Context/NavContext";
 import { DataContext } from "../../Context/DataContext";
 import Intro from "./Intro/Intro";
-
 import About from "./About/About";
 import Departments from "./Departments/Departments";
 import Portafolio from "./Portfolio/Portfolio";

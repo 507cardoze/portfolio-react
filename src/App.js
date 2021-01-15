@@ -9,16 +9,16 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`/portafolio`}>
       <DataProvider>
         <NavProvider>
           <AnimatePresence>
             <Switch>
-              <Route exact path="/">
+              <Route exact path={`/`}>
                 <Home />
               </Route>
               <Route path="*">
-                <Redirect to="/" />
+                <Redirect to={`/`} />
               </Route>
             </Switch>
           </AnimatePresence>

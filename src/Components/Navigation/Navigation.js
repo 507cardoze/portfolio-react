@@ -33,7 +33,10 @@ const Navigation = ({ gotoAction }) => {
                 setSectionName("Inicio");
               }}
             >
-              <span>Inicio</span>
+              <span>
+                <i className="ion-ios-home"></i>
+                {` Inicio`}
+              </span>
             </li>
 
             <li
@@ -43,25 +46,47 @@ const Navigation = ({ gotoAction }) => {
                 setSectionName("Sobre nosotros");
               }}
             >
-              <span>Sobre Nosotros</span>
+              <span>
+                <i className="ion-android-document"></i>
+                {` Sobre Nosotros`}
+              </span>
             </li>
             <li
               className={sectionName === "Departamentos" ? "active" : ""}
-              onClick={() => gotoAction("Departments")}
+              onClick={() => {
+                gotoAction("Departments");
+                setSectionName("Departamentos");
+              }}
             >
-              <span>Departamentos</span>
+              <span>
+                <i className="ion-android-bookmark"></i>
+                {` Departamentos`}
+              </span>
             </li>
             <li
               className={sectionName === "Portafolio" ? "active" : ""}
-              onClick={() => gotoAction("Portfolio")}
+              onClick={() => {
+                gotoAction("Portfolio");
+                setSectionName("Portafolio");
+              }}
             >
-              <span>Portafolio</span>
+              <span>
+                <i className="ion-android-playstore"></i>
+                {` Portafolio`}
+              </span>
             </li>
-            <li
-              className={sectionName === "Contactos" ? "active" : ""}
-              onClick={() => gotoAction("Contacts")}
-            >
-              <span>Contactos</span>
+            <li>
+              <a
+                href={`mailto:${data.header.supportEmail}`}
+                title="Envianos un correo"
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <i className="ion-android-mail"></i>
+                {` `}
+                Contactanos
+              </a>
             </li>
           </ul>
         </nav>

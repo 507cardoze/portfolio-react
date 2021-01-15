@@ -27,13 +27,7 @@ const Intro = ({ setSectionName, gotoAction, data }) => {
             </h2>
             <div>
               <span
-                className="gray scrollto"
-                onClick={() => gotoAction("AboutUs")}
-              >
-                {data.intro.grayButtonText}
-              </span>
-              <span
-                className="btn-get-started scrollto ml-2"
+                className="btn-get-started scrollto"
                 onClick={() => gotoAction("Portfolio")}
               >
                 {data.intro.blueButtonText}

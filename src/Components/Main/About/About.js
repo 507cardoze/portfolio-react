@@ -1,6 +1,6 @@
 import { InView } from "react-intersection-observer";
-import "./About.css";
 import { forwardRef } from "react";
+import "./About.css";
 
 const About = ({ setSectionName, data }, ref) => {
   return (
@@ -25,10 +25,14 @@ const About = ({ setSectionName, data }, ref) => {
 
           <div className="col-lg-7 col-md-6">
             <div className="about-content">
-              <h2>{data.about.title}</h2>
-              <h3>{data.about.subTitle}</h3>
-              <p>{data.about.mainParagrah}</p>
-              <p>{data.about.subParagrah}</p>
+              <h2>{data.about.text.primary.title}</h2>
+              <p>{data.about.text.primary.mainParagrah}</p>
+              <p>{data.about.text.primary.subParagrah}</p>
+            </div>
+            <div className="about-content">
+              <h2>{data.about.text.secondary.title}</h2>
+              <p>{data.about.text.secondary.mainParagrah}</p>
+              <p>{data.about.text.secondary.subParagrah}</p>
             </div>
           </div>
         </div>

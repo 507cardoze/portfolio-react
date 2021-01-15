@@ -1,6 +1,6 @@
 .back-to-top {
   position: fixed;
-  display: block;
+  display: none;
   background: #1bb1dc;
   color: #fff;
   width: 44px;
@@ -9,8 +9,8 @@
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
+  right: 1rem;
+  bottom: 1rem;
   transition: background 0.5s;
   z-index: 11;
   cursor: pointer;

@@ -1,0 +1,43 @@
+#header-responsive {
+  width: 100%;
+  z-index: 997;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 70px;
+  transition: all 0.5s;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header-responsive .responsive-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#header-responsive .responsive-nav li {
+  display: block;
+  position: relative;
+  color: #413e66;
+  transition: 0.3s;
+  padding: 3px 15px;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+#header-responsive .responsive-nav li > i:hover,
+#header-responsive .responsive-nav .active,
+#header-responsive .responsive-nav li:hover > li {
+  color: #1bb1dc;
+  border-bottom: 2px solid #1bb1dc;
+}

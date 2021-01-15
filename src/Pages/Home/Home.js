@@ -1,6 +1,7 @@
 import Main from "../../Components/Main/Main";
 import Navigation from "../../Components/Navigation/Navigation";
 import Footer from "../../Components/Footer/Footer";
+import BottomToolBar from "../../Components/BottomToolBar/BottomToolBar";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
@@ -31,12 +32,6 @@ const Home = () => {
           behavior: "smooth",
         });
         break;
-      case "Contacts":
-        window.scrollTo({
-          top: contactSection.current.offsetTop - 70,
-          behavior: "smooth",
-        });
-        break;
       default:
         return null;
     }
@@ -45,7 +40,6 @@ const Home = () => {
   const aboutSection = useRef(null);
   const departmentsSection = useRef(null);
   const portfolioSection = useRef(null);
-  const contactSection = useRef(null);
 
   return (
     <motion.div
@@ -67,6 +61,7 @@ const Home = () => {
       }}
     >
       <Navigation gotoAction={gotoAction} />
+      <BottomToolBar gotoAction={gotoAction} />
       <Main
         ref={{
           aboutRef: aboutSection,
@@ -75,7 +70,7 @@ const Home = () => {
         }}
         gotoAction={gotoAction}
       />
-      <Footer ref={{ contactRef: contactSection }} gotoAction={gotoAction} />
+      <Footer />
     </motion.div>
   );
 };

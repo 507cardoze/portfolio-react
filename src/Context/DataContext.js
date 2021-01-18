@@ -26,7 +26,13 @@ export const DataProvider = (props) => {
     header: {
       logo: logo,
       logoTitle: "DINATEL",
-      supportEmail: "soporte.informatico@aeronaval.gob.pa",
+      supportEmail: "soporte.tecnico@aeronaval.gob.pa",
+      footer: {
+        direccion: "DINATEL",
+        departamento: "Dept. de Informática",
+        seccion: "Sección Desarrollo de Software",
+        email: "soporte.tecnico@aeronaval.gob.pa",
+      },
     },
     intro: {
       background: imgBG,
@@ -104,7 +110,8 @@ export const DataProvider = (props) => {
           icon: "ion-wifi",
           iconColor: "#3fcdc7",
           title: "Redes e Infraestructura",
-          description: "hola mundo",
+          description:
+            "Planificar, organizar, coordinar y realizar tareas de suministro, instalación y mantenimiento de los sistemas de redes de datos, imagen y voz en formatos análogos, digital, radioenlace, satelital u otra tecnología innovadora que demande el establecimiento, ampliación de la plataforma de teleinformática que facilite el desarrollo de la misión institucional.",
           id: 3,
         },
         {
@@ -116,7 +123,8 @@ export const DataProvider = (props) => {
           icon: "ion-android-map",
           iconColor: "#3fcdc7",
           title: "Vigilancia Territorial",
-          description: "hola mundo",
+          description:
+            "Gestionar, Administrar y mantener los recursos tecnológicos de vigilancia, para fortalecer la protección de los espacios jurisdiccionales de competencia aeronaval a fin de facilitar el proceso de toma de decisiones que contribuyan a garantizar la seguridad pública.",
           id: 4,
         },
         {

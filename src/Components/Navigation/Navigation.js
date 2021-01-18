@@ -85,7 +85,7 @@ const Navigation = ({ gotoAction }) => {
               >
                 <i className="ion-android-mail"></i>
                 {` `}
-                Contactanos
+                Envianos un correo
               </a>
             </li>
           </ul>

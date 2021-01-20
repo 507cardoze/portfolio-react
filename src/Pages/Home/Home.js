@@ -4,7 +4,6 @@ import Footer from "../../Components/Footer/Footer";
 import BottomToolBar from "../../Components/BottomToolBar/BottomToolBar";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import InstallPWA from "../../Components/InstallPWA/InstallPWA";
 
 const Home = () => {
   const gotoAction = (section) => {
@@ -61,7 +60,6 @@ const Home = () => {
         duration: 1.5,
       }}
     >
-      <InstallPWA />
       <Navigation gotoAction={gotoAction} />
       <BottomToolBar gotoAction={gotoAction} />
       <Main

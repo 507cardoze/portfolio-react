@@ -1,6 +1,6 @@
 import { useState, createContext } from "react";
 import logo from "../img/telematica.png";
-import imgSVG from "../img/intro-img.svg";
+import { ReactComponent as imgSVG } from "../img/intro-img.svg";
 import imgBG from "../img/intro-bg.jpg";
 import aboutImage from "../img/about-img.jpg";
 import aboutImage2 from "../img/about2-img.jpg";

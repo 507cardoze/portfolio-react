@@ -14,10 +14,20 @@ import BSCW from "../img/bswc.png";
 import PAG from "../img/valenzuela.png";
 import SAGI from "../img/sagi.png";
 import POWERPOINT from "../img/logo-power-point.jpg";
-import VIDEOPLACEHOLDER from "../img/placeholder.png";
-import PPTXPNC from "../files/Plataforma nube colaborativa.pptx";
-import PPSXSISGED from "../files/Presentacion Programa nuevo.ppsx";
+
+//recursos externos a el App
+import PPTXPNC from "../files/PNC.pptx";
+import PPSXSISGED from "../files/SISGED.ppsx";
 import VIDEOSISGED from "../files/video_notas_VP8.webm";
+
+import PreviewPPTGLPI from "../files/previewPPTGLPI.jpg";
+import PreviewPPTSISGED from "../files/previewPPTSISGED.jpg";
+
+import PreviewVideoSISGED from "../files/previewVideoSISGED.jpg";
+import PreviewVideoGLPI from "../files/previewVideoGLPI.jpg";
+
+import VideoMesa from "../files/video_mesa_ayuda.mp4";
+import MESAPPT from "../files/MESA.ppsx";
 
 export const DataContext = createContext();
 
@@ -256,7 +266,7 @@ export const DataProvider = (props) => {
         },
         {
           id: 9,
-          image: POWERPOINT,
+          image: PreviewPPTSISGED,
           name: "SISGED",
           description: "PowerPoint tutorial",
           tag: ["Tutoriales"],
@@ -268,7 +278,7 @@ export const DataProvider = (props) => {
         },
         {
           id: 10,
-          image: VIDEOPLACEHOLDER,
+          image: PreviewVideoSISGED,
           name: "SISGED",
           description: "Video tutorial",
           tag: ["Tutoriales"],
@@ -287,6 +297,29 @@ export const DataProvider = (props) => {
             src: PPTXPNC,
             type: "",
             isDownloable: true,
+          },
+        },
+        {
+          id: 12,
+          image: PreviewPPTGLPI,
+          name: "MESA DE AYUDA",
+          description: "PowerPoint tutorial",
+          tag: ["Tutoriales"],
+          media: {
+            src: MESAPPT,
+            type: "",
+            isDownloable: true,
+          },
+        },
+        {
+          id: 10,
+          image: PreviewVideoGLPI,
+          name: "MESA DE AYUDA",
+          description: "PowerPoint tutorial",
+          tag: ["Tutoriales"],
+          media: {
+            src: VideoMesa,
+            type: "video/mp4",
           },
         },
       ],

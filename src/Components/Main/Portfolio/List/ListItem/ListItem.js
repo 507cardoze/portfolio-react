@@ -80,6 +80,9 @@ function ListItem({ item, setVideoModal }) {
             {item.media.type === "video/webm" && (
               <ViewableItem id={item.id} setVideoModal={setVideoModal} />
             )}
+            {item.media.type === "video/mp4" && (
+              <ViewableItem id={item.id} setVideoModal={setVideoModal} />
+            )}
             {item.media.isDownloable && <DownloadableItem media={item.media} />}
           </div>
         </div>

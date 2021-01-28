@@ -312,7 +312,7 @@ export const DataProvider = (props) => {
           },
         },
         {
-          id: 10,
+          id: 13,
           image: PreviewVideoGLPI,
           name: "MESA DE AYUDA",
           description: "PowerPoint tutorial",

@@ -31,7 +31,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://10.2.11.95/portafolio/",
   "browserslist": {
     "production": [
       ">0.2%",

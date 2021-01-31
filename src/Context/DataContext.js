@@ -13,21 +13,6 @@ import EMAIL from "../img/correo.png";
 import BSCW from "../img/bswc.png";
 import PAG from "../img/valenzuela.png";
 import SAGI from "../img/sagi.png";
-import POWERPOINT from "../img/logo-power-point.jpg";
-
-//recursos externos a el App
-import PPTXPNC from "../files/PNC.pptx";
-import PPSXSISGED from "../files/SISGED.ppsx";
-import VIDEOSISGED from "../files/video_notas_VP8.webm";
-
-import PreviewPPTGLPI from "../files/previewPPTGLPI.jpg";
-import PreviewPPTSISGED from "../files/previewPPTSISGED.jpg";
-
-import PreviewVideoSISGED from "../files/previewVideoSISGED.jpg";
-import PreviewVideoGLPI from "../files/previewVideoGLPI.jpg";
-
-import VideoMesa from "../files/video_mesa_ayuda.mp4";
-import MESAPPT from "../files/MESA.ppsx";
 
 export const DataContext = createContext();
 
@@ -154,7 +139,7 @@ export const DataProvider = (props) => {
     },
     portfolio: {
       sectionTitle: "Portafolio de trabajo",
-      porfolioFilterList: ["Todos", "Sistemas", "Herramientas", "Tutoriales"],
+      porfolioFilterList: ["Todos", "Sistemas", "Herramientas"],
       appItems: [
         {
           id: 1,
@@ -262,64 +247,6 @@ export const DataProvider = (props) => {
           media: {
             src: "",
             type: "",
-          },
-        },
-        {
-          id: 9,
-          image: PreviewPPTSISGED,
-          name: "SISGED",
-          description: "PowerPoint tutorial",
-          tag: ["Tutoriales"],
-          media: {
-            src: PPSXSISGED,
-            type: "",
-            isDownloable: true,
-          },
-        },
-        {
-          id: 10,
-          image: PreviewVideoSISGED,
-          name: "SISGED",
-          description: "Video tutorial",
-          tag: ["Tutoriales"],
-          media: {
-            src: VIDEOSISGED,
-            type: "video/webm",
-          },
-        },
-        {
-          id: 11,
-          image: POWERPOINT,
-          name: "PNC",
-          description: "Video tutorial ",
-          tag: ["Tutoriales"],
-          media: {
-            src: PPTXPNC,
-            type: "",
-            isDownloable: true,
-          },
-        },
-        {
-          id: 12,
-          image: PreviewPPTGLPI,
-          name: "MESA DE AYUDA",
-          description: "PowerPoint tutorial",
-          tag: ["Tutoriales"],
-          media: {
-            src: MESAPPT,
-            type: "",
-            isDownloable: true,
-          },
-        },
-        {
-          id: 13,
-          image: PreviewVideoGLPI,
-          name: "MESA DE AYUDA",
-          description: "PowerPoint tutorial",
-          tag: ["Tutoriales"],
-          media: {
-            src: VideoMesa,
-            type: "video/mp4",
           },
         },
       ],
